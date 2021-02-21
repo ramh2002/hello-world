@@ -1,0 +1,54 @@
+###Traingle display
+
+def call_space(k):
+    m=0
+    while m<k:
+        print(end=" ")
+        m +=1
+    return
+def print_star(n):
+    k = n-1
+    i=1
+    j=0
+    while i<n:
+        call_space(k)
+        k = k-1
+        print((i) * "*"+(i-1) * "*", end="")
+        print("\r")
+        i +=1
+print_star(5)
+
+### Q2 hours glass display *
+def print_space(j,space):
+    k = j
+    while k < space :
+        print (" ", end="")
+        k +=1
+
+def hours_glass(n):
+
+    i = 1
+    j=0
+    while i<n+1:
+        print_space(1,i)
+        j=i
+        while j<n+1:
+            print("*", end=" ")
+            j += 1
+        print("\r")
+        i +=1
+    m = n
+    while m > 0:
+        print_space(1,m)
+        j = m
+        while j < n+1:
+            print("*", end=" ")
+            j +=1
+        print("\r")
+        m -=1
+hours_glass(5)
+
+
+
+
+
